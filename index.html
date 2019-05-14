@@ -1,0 +1,65 @@
+<html>
+    <head>
+		<title>xBuzzer</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+        <script type="text/javascript" language="javascript" src="buzzer.js"></script>
+
+        <!-- this style tag is to prevent excess unnecessary calls to retrieve extra resources, and totally not because i'm too lazy to make a .css file -->
+        <style type="text/css">
+            h2 {
+                margin-top: 2em;
+            }
+
+            code {
+                display: block;
+                background-color: #CCC;
+                box-shadow: inset 4px 4px 16px #999;
+                border-radius: 4px;
+            }
+
+            footer {
+                font-size: 0.8em;
+                border-top: 1px solid #999;
+                margin-top: 1em;
+                padding-top: 1em;
+                text-align: right;
+            }
+        </style>
+    </head>
+    <body>        
+        <div class="container">
+            <header>
+                <div class="jumbotron">
+                    <h1>xBuzzer</h1>
+                    <p>No, it's not a Linux thing.  It's a buzzer with an X.</p>        
+                </div>
+            </header>
+            
+            <section>
+                <h2>Alerting unaware users in real time.</h2>
+                <p>Validation works pretty well on most websites, but some users seem to just be oblivious to errors.  xBuzzer was created specifically for those users.</p>
+    
+                <h2>What?</h2>
+                <p>With a simple Javascript call, xBuzzer's patented X-buzz(TM) technology will promptly alert users to their ineptitude in a totally non-condescending manner.</p>        
+
+                <h2><i>What?</i></h2>
+                <p>
+                    <button class="btn" onclick="buzz();">Click here</button>
+                </p>
+
+                <h2>I'm in.</h2>
+                <pre><code>
+                    &lt;-- include this --&gt;
+                    &lt;script type="text/javascript" src="//xbuzzer.org/buzzer.js"&gt;&lt;/script&gt;
+
+                    // then call this
+                    buzz();
+                </code></pre>
+            </section>
+
+            <footer>
+                &copy;2018 very ashamed person.  somebody give me lots of money for this
+            </footer>
+        </div>
+    </body>
+</html>
